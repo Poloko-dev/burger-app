@@ -12,7 +12,7 @@ function Meat() {
         fontSize: '14px',
       }}
     >
-      Meet
+      Meat
     </div>;
 }
 export default Meat;
