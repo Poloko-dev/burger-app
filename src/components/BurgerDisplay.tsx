@@ -23,7 +23,7 @@ function BurgerDisplay({ layers }: Props) {
   };
 
   return (
-    <div style={{ marginTop: 20, textAlign: 'center' }}>
+    <div style={{ marginTop: 20, textAlign: 'center', width: 300 }}>
       <TopBread />
       {layers.map((layer, i) => renderLayer(layer, i))}
       <BaseBread />

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import LayerSelector from './components/LayerSelector';
 import LayerInput from './components/LayerInput';
 import BurgerDisplay from './components/BurgerDisplay';
+import './App.css';
 
 function App() {
   const [layerCount, setLayerCount] = useState<number>(0);
@@ -19,7 +20,7 @@ function App() {
   };
 
   return (
-    <div style={{ padding: 20 }}>
+    <div className="container" style={{ padding: 20 }}>
       <h1>Burger Builder</h1>
       {layerCount === 0 ? (
         <LayerSelector onSelect={handleSetLayerCount} />
