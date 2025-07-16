@@ -1,3 +1,4 @@
+import '../App.css';
 interface Props {
   ingredients: string[];
   onSetIngredient: (index: number, value: string) => void;
@@ -7,7 +8,7 @@ const options = ['Tomato', 'Meat', 'Lettuce'];
 
 function LayerInput({ ingredients, onSetIngredient }: Props) {
   return (
-    <div>
+    <div className="ingredient-selector">
       <h2>Select Ingredients</h2>
       {ingredients.map((_, index) => (
         <div key={index}>
